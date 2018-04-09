@@ -145,7 +145,7 @@
                                     <a href="allproperty"> <i class="icon-angle-right"></i> Property   </a>
                                 </li>
                                 <li class="">
-                                    <a href="#"> <i class="icon-angle-right"></i> Member  </a>
+                                    <a href="allmember"> <i class="icon-angle-right"></i> Member  </a>
                                 </li>
                                 <li class="">
                                     <a href="#"> <i class="icon-angle-right"></i> Components  </a>

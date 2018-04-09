@@ -44,7 +44,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Member Registration Number:</label>
-                                        <input type="text" name="SocietyRegistrationNumber" class="form-control" required="">
+                                        <input type="text" name="MemberRegistrationNumber" class="form-control" required="">
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Previous Member Registration Number:</label>
@@ -72,25 +72,25 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Gender:</label>
-                                        <input type="date" name="Gender" class="form-control" required="">
+                                        <input type="text" name="Gender" class="form-control" required="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">DOB:</label>
-                                        <input type="text" name="DOB" class="form-control" required="">
+                                        <input type="date" name="DOB" class="form-control" required="">
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">PAN No.:</label>
-                                        <input type="text" name="PANNo" class="form-control" required="">
+                                        <input type="file" name="PANNo" data-style="fileinput" required="">
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">AADHAR/SSN No.:</label>
-                                        <input type="text" name="AADHARSSNNo" class="form-control" required="">
+                                        <input type="file" name="AADHARSSNNo" data-style="fileinput" required="">
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Passport No.:</label>
-                                        <input type="text" name="PassportNo" class="form-control" required="">
+                                        <input type="file" name="PassportNo" data-style="fileinput" required="">
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Mobile:</label>
@@ -110,11 +110,27 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Member Valid From:</label>
-                                        <input type="file" name="MemberValidFrom" class="form-control" required="">
+                                        <input type="date" name="MemberValidFrom" class="form-control" required="">
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Pincode:</label>
-                                        <input type="text" name="Pincode" class="form-control" required="">
+                                        <label class="control-label">Member Valid TO:</label>
+                                        <input type="date" name="MemberValidTo" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Remarks:</label>
+                                        <input type="text" name="Remarks" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Status:</label>
+                                        <input type="text" name="Status" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Photograph:</label>
+                                        <input type="file" name="Photograph" data-style="fileinput" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Signature:</label>
+                                        <input type="file" name="Signature" data-style="fileinput" required="">
                                     </div>
                                 </div>
                             </div>

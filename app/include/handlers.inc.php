@@ -157,5 +157,7 @@ function alter_routes(&$routes) {
     $routes['society-address'] = "handle_societyAddress";
     $routes['allproperty'] = "handle_allproperty";
     $routes['property'] = "handle_property";
+    $routes['allmember'] = "handle_allmember";
+    $routes['member'] = "handle_member";
     
 }

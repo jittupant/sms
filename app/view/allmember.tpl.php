@@ -41,7 +41,7 @@
                                 <h4><i class="icon-reorder"></i> Member / Resident Details</h4>
                                 <div class="toolbar no-padding">
                                     <div class="btn-group">
-                                        <a href="society">
+                                        <a href="member">
                                             <span class="btn btn-xs">
                                                 <i class="icon-plus"></i>Add New
                                             </span>
