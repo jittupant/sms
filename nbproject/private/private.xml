@@ -6,6 +6,7 @@
             <file>file:/C:/xampp/htdocs/sms/app/include/handlers.inc.php</file>
             <file>file:/C:/xampp/htdocs/sms/app/api/dispatch.php</file>
             <file>file:/C:/xampp/htdocs/sms/app/view/member.tpl.php</file>
+            <file>file:/C:/xampp/htdocs/sms/app/api/model/MemberModel.php</file>
             <file>file:/C:/xampp/htdocs/sms/app/api/controller/SocietyController.php</file>
             <file>file:/C:/xampp/htdocs/sms/app/js/manage/membermmaster.js</file>
             <file>file:/C:/xampp/htdocs/sms/app/js/all.js</file>

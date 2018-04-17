@@ -15,8 +15,8 @@ require_once(dirname(__FILE__) . '/model/UserModel.php');
 require_once(dirname(__FILE__) . '/model/SocietyModel.php');
 require_once(dirname(__FILE__) . '/controller/PropertyController.php');
 require_once(dirname(__FILE__) . '/model/PropertyModel.php');
-//require_once(dirname(__FILE__) . '/controller/MemberController.php');
-//require_once(dirname(__FILE__) . '/model/MemberModel.php');
+require_once(dirname(__FILE__) . '/controller/MemberController.php');
+require_once(dirname(__FILE__) . '/model/MemberModel.php');
 // handle request
 $request = new Request(array('baseUri' => '/sms/app/api'));
 

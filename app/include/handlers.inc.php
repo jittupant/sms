@@ -151,7 +151,7 @@ function handle_allmember(&$variables) {
     $variables['title'] = 'All Memmbers';
     $variables['header'] = render_template('app/template', 'header', $variables);
     $variables['script'] = '
-    <script type="text/javascript" src=""></script>';
+    <script type="text/javascript" src="app/js/manage/membermmaster"></script>';
     print render_template("app/view", "allmember", $variables);
 }
 function handle_member(&$variables) {
@@ -160,7 +160,7 @@ function handle_member(&$variables) {
     $variables['title'] = 'All Memmbers';
     $variables['header'] = render_template('app/template', 'header', $variables);
     $variables['script'] = '
-    <script type="text/javascript" src=""></script>';
+    <script type="text/javascript" src="app/js/manage/membermmaster.js"></script>';
     print render_template("app/view", "member", $variables);
 }
 

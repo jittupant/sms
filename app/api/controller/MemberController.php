@@ -141,7 +141,7 @@ class Members extends AppResource {
         }
             try {
                 $db = DB::getDB();
-                $SocietyInsert = PropertyModel::AddProperty($input, $db);
+                $SocietyInsert = MemberModel::AddMemberDetails($Photograph_name,$PANupload,$AADHARSSNUpload,$PassportNoUpload,$Signature,$input, $db);
                 if ($SocietyInsert) {
                     $res['msg'] = "Property Added Succsefully";
                     $res['error'] = 1;

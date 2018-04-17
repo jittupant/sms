@@ -15,7 +15,7 @@
 
                 </li>
 
-                <li class="current">Member / Resident Details</li>
+                <li class="current">Member / Add Details</li>
 
             </ul>
 
@@ -27,7 +27,7 @@
                 <div class="widget box">
                     <form id="frmmemberdetails">
                         <div class="widget-header">
-                            <h4><i class="icon-reorder"></i> Member / Resident Details</h4>
+                            <h4><i class="icon-reorder"></i> Member Details</h4>
                         </div>
 
                         <div class="widget-content">
