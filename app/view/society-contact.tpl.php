@@ -30,7 +30,7 @@
                         </div>
                         <div class="widget-content">
                             <div class="col-md-6">
-                                <div class="form-group">
+                            <div class="form-group">
                                 <label class="control-label">Select Society:</label>
                                 <select name="SocietyID" class="form-control SocietyID" required="">
 

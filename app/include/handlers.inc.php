@@ -145,6 +145,24 @@ function handle_property(&$variables) {
     <script type="text/javascript" src="app/js/manage/propertymaster.js"></script>';
     print render_template("app/view", "property", $variables);
 }
+function handle_allmember(&$variables) {
+
+    get_scriptfiles($variables);
+    $variables['title'] = 'All Memmbers';
+    $variables['header'] = render_template('app/template', 'header', $variables);
+    $variables['script'] = '
+    <script type="text/javascript" src=""></script>';
+    print render_template("app/view", "allmember", $variables);
+}
+function handle_member(&$variables) {
+
+    get_scriptfiles($variables);
+    $variables['title'] = 'All Memmbers';
+    $variables['header'] = render_template('app/template', 'header', $variables);
+    $variables['script'] = '
+    <script type="text/javascript" src=""></script>';
+    print render_template("app/view", "member", $variables);
+}
 
 function alter_routes(&$routes) {
     $routes[null] = "handle_login";

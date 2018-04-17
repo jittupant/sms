@@ -13,7 +13,6 @@ function loginMakeBasicAuth(user, password) {
 }
 
 $(document).ready(function () {
-    debugger;
     $.ajax({
         url: appGetSecureURL('/sms/app/api/getsocietyname/'),
         type: 'GET',
