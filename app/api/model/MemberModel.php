@@ -34,10 +34,10 @@ class MemberModel {
         
         $query = '';
         $output = array();
-        $query .= "SELECT * FROM tbl_property ";
+        $query .= "SELECT * FROM tbl_member ";
         if (isset($input["search"]["value"]) && $input["search"]["value"] !== "") {
-            $query .= 'WHERE Tower LIKE "%' . $input["search"]["value"] . '%" ';
-            $query .= 'OR PropertyNo LIKE "%' . $input["search"]["value"] . '%" ';
+            $query .= 'WHERE MemberRegistrationNumber LIKE "%' . $input["search"]["value"] . '%" ';
+            $query .= 'OR OwnershipType LIKE "%' . $input["search"]["value"] . '%" ';
         }
        
         if ($input["length"] != -1) {
@@ -53,6 +53,12 @@ class MemberModel {
         $filtered_rows = $statement->rowCount();
       
         foreach ($result as $row) {
+            $image = '';
+            if ($row["Logo"] != '') {
+                $image = '<img src="app/images/' . $row["Logo"] . '" class="img-thumbnail" width="50" height="35" />';
+            } else {
+                $image = '';
+            }
             if($row['Status'] == 0){
                 $Status = '<span class="label label-danger">Inactive</span>';
             }else{
@@ -61,11 +67,11 @@ class MemberModel {
             $sub_array = array();
             $SocietyName = UserModel::get_colum_name($db,"tbl_society", "DbKey", "Name", $row["SocietyDbKey"]);
             $sub_array[] = $SocietyName;
-            $sub_array[] = "<a onclick='viewdetails(".$row["DbKey"].");'>".$row["Tower"]."</a>";
-            $sub_array[] = $row["Block"];
-            $sub_array[] = $row["PropertyNo"];
-            $sub_array[] = $row["PropertyType"];
-            $sub_array[] = $row["UnitType"];
+            $sub_array[] = $image;
+            $sub_array[] = $row["MemberResidentType"];
+            $sub_array[] = $row["MemberRegistrationNumber"];
+            $sub_array[] = $row["PreviousMemberRegistrationNumber"];
+            $sub_array[] = $row["OwnershipType"];
             $sub_array[] = $Status;
             //$sub_array[] = '<button type="button" name="update" id="' . $row["id"] . '" class="btn btn-warning btn-xs update">Update</button>';
             //$sub_array[] = '<button type="button" name="delete" id="' . $row["id"] . '" class="btn btn-danger btn-xs delete">Delete</button>';
