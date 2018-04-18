@@ -31,9 +31,6 @@
                         </div>
 
                         <div class="widget-content">
-
-                            
-                               
                                     <div class="form-group col-md-4">
                                         <label class="control-label">Select Society:</label>
                                         <select name="SocietyID" class="form-control SocietyID" required="">
@@ -165,7 +162,36 @@
                                         <label class="control-label">Member Valid TO:</label>
                                         <input type="date" name="MemberValidTo" class="form-control" required="">
                                     </div>
-                                     <div class="form-group col-md-4">
+                                    <div class="form-group col-md-4">
+                                        <label class="control-label">Member Valid From:</label>
+                                        <input type="date" name="MemberValidFrom" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="control-label">Remarks:</label>
+                                        <input type="text" name="Remarks" class="form-control" required="">
+                                    </div>
+                                   
+                                </div>
+                          
+                        
+                        <div class="widget-footer">
+                            <p class="btnmain">
+                                <input type="submit" id="btn-load btnmain" class="btn btn-primary" value="Submit"/>
+                            </p>
+                        </div>
+                    </form>
+                    <form id="frmmemberaddress">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> Member Address Details</h4>
+                        </div>
+
+                        <div class="widget-content">
+                                    
+                                    <div class="form-group col-md-4">
+                                        <label class="control-label">Member Valid TO:</label>
+                                        <input type="date" name="MemberValidTo" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group col-md-4">
                                         <label class="control-label">Member Valid From:</label>
                                         <input type="date" name="MemberValidFrom" class="form-control" required="">
                                     </div>

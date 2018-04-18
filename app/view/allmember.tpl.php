@@ -75,13 +75,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane " id="TaxDetails">
+                    <div class="tab-pane " id="FamilyDetails">
                         <div class="widget box">
                             <div class="widget-header">
-                                <h4><i class="icon-reorder"></i> Tax Details</h4>
+                                <h4><i class="icon-reorder"></i> Family Details</h4>
                                 <div class="toolbar no-padding">
                                     <div class="btn-group">
-                                        <a href="tax">
+                                        <a href="member#FamilyDetails">
                                             <span class="btn btn-xs">
                                                 <i class="icon-plus"></i>Add New
                                             </span>
@@ -100,12 +100,12 @@
                                 <table class="table table-striped table-bordered table-hover table-checkable table-tabletools display" id="tbltax" style="width: 100%;">
                                     <thead>
                                         <tr>
-                                            <th>Society</th>
-                                            <th>Tax Type</th>
-                                            <th>Applicability</th>
+                                            <th>ResidentTypeDbKey</th>
+                                            <th>Address Number</th>
+                                            <th>Address Type</th>
+                                            <th>Locality</th>
+                                            <th>City</th>
                                             <th>State</th>
-                                            <th>Registration</th>
-
                                         </tr>
                                     </thead>
                                     <tbody> 
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="AreaDetails">
+                    <div class="tab-pane" id="AddressDetails">
                         <div class="widget box">
                             <div class="widget-header">
                                 <h4><i class="icon-reorder"></i> </h4>
@@ -184,14 +184,12 @@
                                             <th>Society</th>
                                             <th>Contact Type</th>
                                             <th>Name</th>
-        <!--                                    <th>Address/Property No</th>-->
                                             <th>Phone</th>
                                             <th>Mobile</th>
                                             <th>MembershipNumber</th>
                                             <th>Email</th>
                                             <th>ValidFrom</th>
                                             <th>ValidTo</th>
-
                                         </tr>
                                     </thead>
                                     <tbody> 
@@ -235,8 +233,6 @@
                                             <th>State</th>
                                             <th>Country</th>
                                             <th>PinCode</th>
-
-
                                         </tr>
                                     </thead>
                                     <tbody> 

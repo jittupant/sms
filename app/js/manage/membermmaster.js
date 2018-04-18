@@ -243,3 +243,7 @@ $("#frmAddressdetails").submit(function (e) {
         },
     });
 });
+if(window.location.hash.substr(1) == "FamilyDetails"){
+   $("#frmmemberdetails").hide();
+   $("#frmmemberaddress").show();
+}
