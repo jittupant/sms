@@ -159,7 +159,7 @@ class Members extends AppResource {
         $input = $this->getInput($request);
         try {
             $db = DB::getDB();
-            $AllProperty = PropertyModel::AllProperty($input,$db);
+            $AllProperty = MemberModel::AllMember($input,$db);
             
               
         } catch (NotFoundException $ex) {
@@ -170,5 +170,38 @@ class Members extends AppResource {
 
         return $this->createResponse($request, jsonp_encode($AllProperty), $response);
     }
+
+    function memberlist(){
+        echo "hfg";
+    }
+    
+}
+/**
+ * @uri /memberlist
+ */
+class GetMemberRegNo extends AppResource {
+
+    function get($request) {
+        $res = array();
+        $response = Response::OK;
+        
+        try {
+            $db = DB::getDB();
+            $MemberRegNo = MemberModel::GetMemberRegNo($db);
+            if ($MemberRegNo) {
+                $res['MemberRegNo'] = $MemberRegNo;
+                $res['error'] = 1;
+            }
+        } catch (NotFoundException $ex) {
+            $response = Response::FORBIDDEN;
+            $res['msg'] = "Error Found In Member Details";
+            $res['error'] = 0;
+        }
+
+
+
+        return $this->createResponse($request, jsonp_encode($res), $response);
+    }
+     
 
 }

@@ -57,9 +57,10 @@
                             </div>
 
                             <div class="widget-content">
-                                <table class="table table-striped table-bordered table-hover table-checkable table-tabletools display" id="tblallsociety" style="width: 100%;">
+                                <table class="table table-striped table-bordered table-hover table-checkable table-tabletools display" id="tblallmember" style="width: 100%;">
                                     <thead>
                                         <tr>
+                                            <th>Society</th>
                                             <th>Photograph</th>
                                             <th>First Name</th>
                                             <th>Mobile</th>

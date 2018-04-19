@@ -29,8 +29,21 @@ class MemberModel {
             echo $e->getMessage();
         }
     }
-    
-    public function AllProperty($input,$db) {
+     public function GetMemberRegNo($db) {
+       try {
+
+            $stmt = $db->prepare("Select DbKey,MemberRegistrationNumber From tbl_member WHERE Status = :f1");
+        if ($stmt->execute(array(':f1' => 1))) {
+              return $stmt->fetchall(PDO::FETCH_ASSOC);
+            } else {
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            echo $e->getMessage();
+        }
+    }
+    public function AllMember($input,$db) {
         
         $query = '';
         $output = array();
@@ -43,7 +56,7 @@ class MemberModel {
         if ($input["length"] != -1) {
             $query .= 'LIMIT ' . $input['start'] . ', ' . $input['length'];
         }
-        $stmt = $db->prepare("SELECT COUNT(*) From tbl_property");
+        $stmt = $db->prepare("SELECT COUNT(*) From tbl_member");
         $stmt->execute();
         $totalRow =  $stmt->fetchColumn();
         $statement = $db->prepare($query);
@@ -54,8 +67,8 @@ class MemberModel {
       
         foreach ($result as $row) {
             $image = '';
-            if ($row["Logo"] != '') {
-                $image = '<img src="app/images/' . $row["Logo"] . '" class="img-thumbnail" width="50" height="35" />';
+            if ($row["Photograph"] != '') {
+                $image = '<img src="app/images/' . $row["Photograph"] . '" class="img-thumbnail" width="50" height="35" />';
             } else {
                 $image = '';
             }
@@ -68,10 +81,10 @@ class MemberModel {
             $SocietyName = UserModel::get_colum_name($db,"tbl_society", "DbKey", "Name", $row["SocietyDbKey"]);
             $sub_array[] = $SocietyName;
             $sub_array[] = $image;
-            $sub_array[] = $row["MemberResidentType"];
+            $sub_array[] = $row["FirstName"];
+            $sub_array[] = $row["Mobile"];
+            $sub_array[] = $row["Email"];
             $sub_array[] = $row["MemberRegistrationNumber"];
-            $sub_array[] = $row["PreviousMemberRegistrationNumber"];
-            $sub_array[] = $row["OwnershipType"];
             $sub_array[] = $Status;
             //$sub_array[] = '<button type="button" name="update" id="' . $row["id"] . '" class="btn btn-warning btn-xs update">Update</button>';
             //$sub_array[] = '<button type="button" name="delete" id="' . $row["id"] . '" class="btn btn-danger btn-xs delete">Delete</button>';

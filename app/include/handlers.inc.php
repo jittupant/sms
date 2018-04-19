@@ -148,19 +148,19 @@ function handle_property(&$variables) {
 function handle_allmember(&$variables) {
 
     get_scriptfiles($variables);
-    $variables['title'] = 'All Memmbers';
+    $variables['title'] = 'All Members';
     $variables['header'] = render_template('app/template', 'header', $variables);
     $variables['script'] = '
-    <script type="text/javascript" src="app/js/manage/membermmaster"></script>';
+    <script type="text/javascript" src="app/js/manage/membermaster.js"></script>';
     print render_template("app/view", "allmember", $variables);
 }
 function handle_member(&$variables) {
 
     get_scriptfiles($variables);
-    $variables['title'] = 'All Memmbers';
+    $variables['title'] = 'All Members';
     $variables['header'] = render_template('app/template', 'header', $variables);
     $variables['script'] = '
-    <script type="text/javascript" src="app/js/manage/membermmaster.js"></script>';
+    <script type="text/javascript" src="app/js/manage/membermaster.js"></script>';
     print render_template("app/view", "member", $variables);
 }
 
