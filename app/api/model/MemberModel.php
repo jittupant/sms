@@ -29,6 +29,21 @@ class MemberModel {
             echo $e->getMessage();
         }
     }
+    public function SaveMemberaddress($input, $db) {
+       $date = date('m-d-Y');
+        try {
+                $stmt = $db->prepare("INSERT INTO tbl_member(`SocietyDbKey`, `MemberResidentType`, `Type`, `MemberRegistrationNumber`, `PreviousMemberRegistrationNumber`, `OwnershipType`, `Salutation`, `FirstName`, `MiddleName`, `LastName`, `Gender`, `DOB`, `PANNo`, `PanLocation`, `AADHARSSNNo`, `AdhaarLocation`, `PassportNo`, `PassportLocation`, `Mobile`, `AlternateMobile`, `Phone`, `Email`, `MemberValidFrom`, `MemberValidTo`, `Remarks`, `Photograph`, `Signature`, `CreatedOn`) VALUES (:f1,:f2,:f3,:f4,:f5,:f6,:f7,:f8,:f9,:f10,:f11,:f12,:f13,:f14,:f15,:f16,:f17,:f18,:f19,:f20,:f21,:f22,:f23,:f24,:f25,:f26,:f27,:f28)");
+
+            if ($stmt->execute(array(':f1' => $input['SocietyID'],':f2' => $input['MemberResidentType']))){ 
+                 return true;
+            } else {
+                return false;
+            }
+        } catch (PDOException $e) {
+
+            echo $e->getMessage();
+        }
+    }
      public function GetMemberRegNo($db) {
        try {
 

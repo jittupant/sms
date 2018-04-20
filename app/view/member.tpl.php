@@ -95,7 +95,7 @@
                                 <input type="text" name="LastName" class="form-control" required="">
                             </div>
                             <div class="form-group col-md-6">
-<label class="control-label">Gender:</label>
+                                <label class="control-label">Gender:</label>
                                 <select name="Gender" class="form-control frmlng">
                                     <option value="" selected="" disabled="">Select Gender</option>
                                     <option value="Male">Male</option>
@@ -186,7 +186,85 @@
 
                         <div class="widget-content">
                             <div class="form-group col-md-6">
-                                <label class="control-label">Select Society:</label>
+                                <label class="control-label">Select Member:</label>
+                                <select name="MemberRegNo" class="form-control MemberRegNo" required="">
+                                </select>                        
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Family Member Name:</label>
+                                <input type="text" name="FamilyMemberName" class="form-control" required="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Gender:</label>
+                                <select name="Gender" class="form-control frmlng">
+                                    <option value="" selected="" disabled="">Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Address Type:</label>
+                                <select name="AddressType" class="form-control frmlng">
+                                    <option value="" selected="" disabled="">Select Address Type</option>
+                                    <option value="Permanent">Permanent</option>
+                                    <option value="Permanent">Permanent</option>
+                                    <option value="Correspondence">Correspondence</option>
+                                    <option value="Temporary">Temporary</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Address Line 1:</label>
+                                <input type="text" class="form-control" name="AddressLine1"  required="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Address Line 2:</label>
+                                <input type="text" class="form-control" name="AddressLine2"  required="">
+                            </div>
+                            
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Locality:</label>
+                                <input type="text" class="form-control" name="Locality" required="">
+                            </div>
+                          
+                            <div class="form-group col-md-6">
+                                <label class="control-label">District:</label>
+                                <input type="text" name="District" class="form-control" required="">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="control-label">City:</label>
+                                <input type="text" name="City" required="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">State:</label>
+                                <input type="text" name="State" class="form-control" >
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Country:</label>
+                                <input type="text" name="Country" class="form-control" required="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label">PinCode:</label>
+                                <input type="text" name="PinCode" class="form-control" required="">
+                            </div>
+                            
+                        </div>
+                        <div class="widget-footer">
+                            <p class="btnmain">
+                                <input type="submit" id="btn-load btnmain" class="btn btn-primary" value="Submit"/>
+                            </p>
+                        </div>
+                    </form>
+                    <form id="" style="display: none;">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> Member Family Details</h4>
+                        </div>
+
+                        <div class="widget-content">
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Select Member:</label>
                                 <select name="MemberRegNo" class="form-control MemberRegNo" required="">
                                 </select>                        
                             </div>
@@ -215,11 +293,11 @@
                                     <option value="Friend">Friend</option>
                                 </select>
                             </div>
-                             <div class="form-group col-md-6">
+                            <div class="form-group col-md-6">
                                 <label class="control-label">Photograph:</label>
                                 <input type="file" name="Photograph" data-style="fileinput" required="">
                             </div>
-                             <div class="form-group col-md-6">
+                            <div class="form-group col-md-6">
                                 <label class="control-label">Signature:</label>
                                 <input type="file" name="Signature" data-style="fileinput" required="">
                             </div>
@@ -264,14 +342,7 @@
                                 <label class="control-label">Email:</label>
                                 <input type="text" name="Email" class="form-control" required="">
                             </div>
-                            <div class="form-group col-md-4">
-                                <label class="control-label">Member Valid From:</label>
-                                <input type="date" name="MemberValidFrom" class="form-control" required="">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label class="control-label">Remarks:</label>
-                                <input type="text" name="Remarks" class="form-control" required="">
-                            </div>
+                            
                         </div>
                         <div class="widget-footer">
                             <p class="btnmain">

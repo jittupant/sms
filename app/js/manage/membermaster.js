@@ -52,11 +52,11 @@ $("#frmmemberdetails").submit(function (e) {
         },
     });
 });
-$("#frmtaxdetails").submit(function (e) {
+$("#frmmemberaddress").submit(function (e) {
     e.preventDefault();
     var formData = new FormData(this);
     $.ajax({
-        url: appGetSecureURL('/sms/app/api/taxdetails/'),
+        url: appGetSecureURL('/sms/app/api/memberaddress/'),
         type: 'post',
         data: formData,
         dataType: "json",
@@ -142,6 +142,10 @@ function viewdetails(uid) {
 
 
 if(window.location.hash.substr(1) == "FamilyDetails"){
+   $("#frmmemberdetails").hide();
+   $("#frmmemberaddress").show();
+}
+if(window.location.hash.substr(1) == "AddressDetails"){
    $("#frmmemberdetails").hide();
    $("#frmmemberaddress").show();
 }

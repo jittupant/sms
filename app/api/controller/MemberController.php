@@ -171,16 +171,63 @@ class Members extends AppResource {
         return $this->createResponse($request, jsonp_encode($AllProperty), $response);
     }
 
-    function memberlist(){
-        echo "hfg";
-    }
-    
+   
 }
 /**
  * @uri /memberlist
  */
 class GetMemberRegNo extends AppResource {
 
+    function get($request) {
+        $res = array();
+        $response = Response::OK;
+        
+        try {
+            $db = DB::getDB();
+            $MemberRegNo = MemberModel::GetMemberRegNo($db);
+            if ($MemberRegNo) {
+                $res['MemberRegNo'] = $MemberRegNo;
+                $res['error'] = 1;
+            }
+        } catch (NotFoundException $ex) {
+            $response = Response::FORBIDDEN;
+            $res['msg'] = "Error Found In Member Details";
+            $res['error'] = 0;
+        }
+
+
+
+        return $this->createResponse($request, jsonp_encode($res), $response);
+    }
+     
+
+}
+/**
+ * @uri /memberaddress
+ */
+class Memberaddress extends AppResource {
+
+    function post($request) {
+        $res = array();
+        $response = Response::OK;
+         $input = $this->getInput($request);
+        try {
+            $db = DB::getDB();
+            $SaveMemberaddress = MemberModel::SaveMemberaddress($db,$input);
+            if ($SaveMemberaddress) {
+                $res['msg'] = "Member Address Details Added Succsefully";
+                $res['error'] = 1;
+            }
+        } catch (NotFoundException $ex) {
+            $response = Response::FORBIDDEN;
+            $res['msg'] = "Error Found In Member Details";
+            $res['error'] = 0;
+        }
+
+
+
+        return $this->createResponse($request, jsonp_encode($res), $response);
+    }
     function get($request) {
         $res = array();
         $response = Response::OK;
