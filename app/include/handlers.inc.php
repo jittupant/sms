@@ -163,6 +163,15 @@ function handle_member(&$variables) {
     <script type="text/javascript" src="app/js/manage/membermaster.js"></script>';
     print render_template("app/view", "member", $variables);
 }
+function handle_component(&$variables) {
+
+    get_scriptfiles($variables);
+    $variables['title'] = 'Component';
+    $variables['header'] = render_template('app/template', 'header', $variables);
+    $variables['script'] = '
+    <script type="text/javascript" src="app/js/manage/componentmaster.js"></script>';
+    print render_template("app/view", "allcomponent", $variables);
+}
 
 function alter_routes(&$routes) {
     $routes[null] = "handle_login";
@@ -177,5 +186,6 @@ function alter_routes(&$routes) {
     $routes['property'] = "handle_property";
     $routes['allmember'] = "handle_allmember";
     $routes['member'] = "handle_member";
+    $routes['allcomponent'] = "handle_component";
     
 }

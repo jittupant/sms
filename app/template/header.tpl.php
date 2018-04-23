@@ -148,7 +148,7 @@
                                     <a href="allmember"> <i class="icon-angle-right"></i> Member  </a>
                                 </li>
                                 <li class="">
-                                    <a href="#"> <i class="icon-angle-right"></i> Components  </a>
+                                    <a href="allcomponent"> <i class="icon-angle-right"></i> Components  </a>
                                 </li>
                                 <li class="">
                                     <a href="#"> <i class="icon-angle-right"></i> Chart of Accounts  </a>
