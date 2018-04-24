@@ -3,18 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/sms/app/include/handlers.inc.php</file>
-            <file>file:/C:/xampp/htdocs/sms/app/api/model/SocietyModel.php</file>
+            <file>file:/C:/xampp/htdocs/sms/app/js/manage/membermaster.js</file>
+            <file>file:/C:/xampp/htdocs/sms/app/view/member.tpl.php</file>
             <file>file:/C:/xampp/htdocs/sms/app/api/model/MemberModel.php</file>
             <file>file:/C:/xampp/htdocs/sms/app/view/allmember.tpl.php</file>
-            <file>file:/C:/xampp/htdocs/sms/app/view/allproperty.tpl.php</file>
-            <file>file:/C:/xampp/htdocs/sms/app/js/all.js</file>
-            <file>file:/C:/xampp/htdocs/sms/app/api/dispatch.php</file>
-            <file>file:/C:/xampp/htdocs/sms/app/view/member.tpl.php</file>
-            <file>file:/C:/xampp/htdocs/sms/app/api/controller/SocietyController.php</file>
-            <file>file:/C:/xampp/htdocs/sms/app/api/model/PropertyModel.php</file>
-            <file>file:/C:/xampp/htdocs/sms/app/api/controller/PropertyController.php</file>
-            <file>file:/C:/xampp/htdocs/sms/app/js/manage/membermmaster.js</file>
+            <file>file:/C:/xampp/htdocs/sms/app/api/lib/tonic.php</file>
             <file>file:/C:/xampp/htdocs/sms/app/api/controller/MemberController.php</file>
         </group>
     </open-files>

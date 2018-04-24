@@ -231,23 +231,18 @@ class Memberaddress extends AppResource {
     function get($request) {
         $res = array();
         $response = Response::OK;
-        
+         $input = $this->getInput($request);
         try {
             $db = DB::getDB();
-            $MemberRegNo = MemberModel::GetMemberRegNo($db);
-            if ($MemberRegNo) {
-                $res['MemberRegNo'] = $MemberRegNo;
-                $res['error'] = 1;
-            }
+            $AllMemberAddress = MemberModel::AllMemberAddress($input,$db);
+          
         } catch (NotFoundException $ex) {
-            $response = Response::FORBIDDEN;
-            $res['msg'] = "Error Found In Member Details";
-            $res['error'] = 0;
+          $response = Response::FORBIDDEN;
         }
 
 
 
-        return $this->createResponse($request, jsonp_encode($res), $response);
+        return $this->createResponse($request, jsonp_encode($AllMemberAddress), $response);
     }
      
 

@@ -98,15 +98,15 @@
                             </div>
 
                             <div class="widget-content">
-                                <table class="table table-striped table-bordered table-hover table-checkable table-tabletools display" id="tblarea" style="width: 100%;">
+                                <table class="table table-striped table-bordered table-hover table-checkable table-tabletools display" id="tblmemberaddress" style="width: 100%;">
                                     <thead>
                                         <tr>
                                             <th>Society</th>
-                                            <th>Area Type</th>
-                                            <th>Area UOM</th>
-                                            <th>Original Area</th>
-                                            <th>Revised Area</th>
-                                            <th>CIA</th>
+                                            <th>Member Reg No</th>
+                                            <th>Family Member Name</th>
+                                            <th>Address Type</th>
+                                            <th>Address</th>
+                                           
 
                                         </tr>
                                     </thead>

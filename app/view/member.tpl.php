@@ -207,13 +207,12 @@
                                 <select name="AddressType" class="form-control frmlng">
                                     <option value="" selected="" disabled="">Select Address Type</option>
                                     <option value="Permanent">Permanent</option>
-                                    <option value="Permanent">Permanent</option>
                                     <option value="Correspondence">Correspondence</option>
                                     <option value="Temporary">Temporary</option>
                                     <option value="Others">Others</option>
                                 </select>
                             </div>
-                            
+
                             <div class="form-group col-md-6">
                                 <label class="control-label">Address Line 1:</label>
                                 <input type="text" class="form-control" name="AddressLine1"  required="">
@@ -222,12 +221,12 @@
                                 <label class="control-label">Address Line 2:</label>
                                 <input type="text" class="form-control" name="AddressLine2"  required="">
                             </div>
-                            
+
                             <div class="form-group col-md-6">
                                 <label class="control-label">Locality:</label>
                                 <input type="text" class="form-control" name="Locality" required="">
                             </div>
-                          
+
                             <div class="form-group col-md-6">
                                 <label class="control-label">District:</label>
                                 <input type="text" name="District" class="form-control" required="">
@@ -235,7 +234,7 @@
 
                             <div class="form-group col-md-6">
                                 <label class="control-label">City:</label>
-                                <input type="text" name="City" required="">
+                                <input type="text" class="form-control" name="City" required="">
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="control-label">State:</label>
@@ -249,7 +248,7 @@
                                 <label class="control-label">PinCode:</label>
                                 <input type="text" name="PinCode" class="form-control" required="">
                             </div>
-                            
+
                         </div>
                         <div class="widget-footer">
                             <p class="btnmain">
@@ -257,7 +256,7 @@
                             </p>
                         </div>
                     </form>
-                    <form id="" style="display: none;">
+                    <form id="frmMemberFamilyDetails" style="display: none;">
                         <div class="widget-header">
                             <h4><i class="icon-reorder"></i> Member Family Details</h4>
                         </div>
@@ -342,7 +341,7 @@
                                 <label class="control-label">Email:</label>
                                 <input type="text" name="Email" class="form-control" required="">
                             </div>
-                            
+
                         </div>
                         <div class="widget-footer">
                             <p class="btnmain">
